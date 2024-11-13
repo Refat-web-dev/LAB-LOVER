@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="logo"><img src="./img/ЛОГО.png" alt="Logo"></header>
+        <div class="layouts">
+            <aside>
+                <button id="profile" class="layouts_buttons layouts_buttons_active">Мой профиль</button>
+                <button id="analyze" class="layouts_buttons">Мои анализы</button>
+                <button id="price" class="layouts_buttons">Пакеты и стоимость</button>
+                <button id="history" class="layouts_buttons">История заказов</button>
+                <button id="support" class="layouts_buttons">Поддержка</button>
+            </aside>
+            <main>
+                <div id="cont-profile" class="profile page">
+                    <h1 class="welcome">Добро пожаловать, Иван!</h1>
+                    <div class="block_data">
+                        <h2 class="title">Мой профиль</h2>
+                        <div class="row">
+                            <form name="user_about">
+                                <label class="name" name="name">
+                                    <p>Ваше имя</p>
+                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
+                                </label>
+                                <label class="email" name="email">
+                                    <p>Ваш e-mail</p>
+                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
+                                </label>
+                                <label class="email" name="phone">
+                                    <p>Ваш телефон</p>
+                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
+                                </label>
+
+                                <label name="countries">
+                                    <p>Ваша страна</p>
+                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                    </select>
+                                </label>
+
+                                <label name="cities">
+                                    <p>Ваш город</p>
+                                    <select class="user_input" name="cities">
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                    </select>
+                                </label>
+
+                                <button class="change">Изменить</button>
+
+                                <label name="change_pass">
+                                    <p>Настройки безопасности</p>
+                                    <button class="change_pass">Поменять пароль</button>
+                                </label>
+                            </form>
+                            <div class="profile_img">
+                                <p class="your">Фото профиля</p>
+                                <img src="./img/avatar.png" alt="avatar">
+                                <button class="add_foto">Добавить фото</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cont-price" class="profile page">
+                    <h1 class="welcome">Price</h1>
+                    <div class="block_data">
+                        <h2 class="title">My price</h2>
+                        <div class="row">
+                            <!-- <form name="user_about">
+                                <label class="name" name="name">
+                                    <p>Ваше имя</p>
+                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
+                                </label>
+                                <label class="email" name="email">
+                                    <p>Ваш e-mail</p>
+                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
+                                </label>
+                                <label class="email" name="phone">
+                                    <p>Ваш телефон</p>
+                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
+                                </label>
+
+                                <label name="countries">
+                                    <p>Ваша страна</p>
+                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                    </select>
+                                </label>
+
+                                <label name="cities">
+                                    <p>Ваш город</p>
+                                    <select class="user_input" name="cities">
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                    </select>
+                                </label>
+
+                                <button class="change">Изменить</button>
+
+                                <label name="change_pass">
+                                    <p>Настройки безопасности</p>
+                                    <button class="change_pass">Поменять пароль</button>
+                                </label>
+                            </form> -->
+                            <div class="profile_img">
+                                <p class="your">Фото профиля</p>
+                                <img src="./img/avatar.png" alt="avatar">
+                                <button class="add_foto">Добавить фото</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cont-analyze" class="profile page">
+                    <h1 class="welcome">Analyze</h1>
+                    <div class="block_data">
+                        <h2 class="title">Мои анализы</h2>
+                        <div class="row">
+                            <form name="user_about">
+                                <label class="name" name="name">
+                                    <p>Ваше имя</p>
+                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
+                                </label>
+                                <label class="email" name="email">
+                                    <p>Ваш e-mail</p>
+                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
+                                </label>
+                                <label class="email" name="phone">
+                                    <p>Ваш телефон</p>
+                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
+                                </label>
+
+                                <label name="countries">
+                                    <p>Ваша страна</p>
+                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                    </select>
+                                </label>
+
+                                <label name="cities">
+                                    <p>Ваш город</p>
+                                    <select class="user_input" name="cities">
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                    </select>
+                                </label>
+
+                                <button class="change">Изменить</button>
+
+                                <label name="change_pass">
+                                    <p>Настройки безопасности</p>
+                                    <button class="change_pass">Поменять пароль</button>
+                                </label>
+                            </form>
+                            <div class="profile_img">
+                                <p class="your">Фото профиля</p>
+                                <img src="./img/avatar.png" alt="avatar">
+                                <button class="add_foto">Добавить фото</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cont-history" class="profile page">
+                    <h1 class="welcome">History</h1>
+                    <div class="block_data">
+                        <h2 class="title">Мой профиль</h2>
+                        <div class="row">
+                            <form name="user_about">
+                                <label class="name" name="name">
+                                    <p>Ваше имя</p>
+                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
+                                </label>
+                                <label class="email" name="email">
+                                    <p>Ваш e-mail</p>
+                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
+                                </label>
+                                <label class="email" name="phone">
+                                    <p>Ваш телефон</p>
+                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
+                                </label>
+
+                                <label name="countries">
+                                    <p>Ваша страна</p>
+                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                    </select>
+                                </label>
+
+                                <label name="cities">
+                                    <p>Ваш город</p>
+                                    <select class="user_input" name="cities">
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                    </select>
+                                </label>
+
+                                <button class="change">Изменить</button>
+
+                                <label name="change_pass">
+                                    <p>Настройки безопасности</p>
+                                    <button class="change_pass">Поменять пароль</button>
+                                </label>
+                            </form>
+                            <div class="profile_img">
+                                <p class="your">Фото профиля</p>
+                                <img src="./img/avatar.png" alt="avatar">
+                                <button class="add_foto">Добавить фото</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cont-support" class="profile page">
+                    <h1 class="welcome">Support</h1>
+                    <div class="block_data">
+                        <h2 class="title">Мой профиль</h2>
+                        <div class="row">
+                            <form name="user_about">
+                                <label class="name" name="name">
+                                    <p>Ваше имя</p>
+                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
+                                </label>
+                                <label class="email" name="email">
+                                    <p>Ваш e-mail</p>
+                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
+                                </label>
+                                <label class="email" name="phone">
+                                    <p>Ваш телефон</p>
+                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
+                                </label>
+
+                                <label name="countries">
+                                    <p>Ваша страна</p>
+                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                        <option value="Kaz">Kazakhstan</option>
+                                    </select>
+                                </label>
+
+                                <label name="cities">
+                                    <p>Ваш город</p>
+                                    <select class="user_input" name="cities">
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                        <option value="bish">Bishkek</option>
+                                    </select>
+                                </label>
+
+                                <button class="change">Изменить</button>
+
+                                <label name="change_pass">
+                                    <p>Настройки безопасности</p>
+                                    <button class="change_pass">Поменять пароль</button>
+                                </label>
+                            </form>
+                            <div class="profile_img">
+                                <p class="your">Фото профиля</p>
+                                <img src="./img/avatar.png" alt="avatar">
+                                <button class="add_foto">Добавить фото</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="logo"><img src="./img/ЛОГО.png" alt="Logo"></div>
+            <p class="copyright">Все права защищены</p>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
