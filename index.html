@@ -13,11 +13,11 @@
         <header class="logo"><img src="./img/ЛОГО.png" alt="Logo"></header>
         <div class="layouts">
             <aside>
-                <button id="profile" class="layouts_buttons layouts_buttons_active">Мой профиль</button>
-                <button id="analyze" class="layouts_buttons">Мои анализы</button>
-                <button id="price" class="layouts_buttons">Пакеты и стоимость</button>
-                <button id="history" class="layouts_buttons">История заказов</button>
-                <button id="support" class="layouts_buttons">Поддержка</button>
+                <button id="profile" class="navigation layouts_buttons layouts_buttons_active">Мой профиль</button>
+                <button id="analyze" class="navigation layouts_buttons">Мои анализы</button>
+                <button id="price" class="navigation layouts_buttons">Пакеты и стоимость</button>
+                <button id="history" class="navigation layouts_buttons">История заказов</button>
+                <button id="support" class="navigation layouts_buttons">Поддержка</button>
             </aside>
             <main>
                 <div id="cont-profile" class="profile page">
@@ -25,47 +25,52 @@
                     <div class="block_data">
                         <h2 class="title">Мой профиль</h2>
                         <div class="row">
-                            <form name="user_about">
-                                <label class="name" name="name">
-                                    <p>Ваше имя</p>
-                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
-                                </label>
-                                <label class="email" name="email">
-                                    <p>Ваш e-mail</p>
-                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
-                                </label>
-                                <label class="email" name="phone">
-                                    <p>Ваш телефон</p>
-                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
-                                </label>
+                            <div class="right">
+                                <form name="user_about">
+                                    <label class="name" name="name">
+                                        <p>Ваше имя</p>
+                                        <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
+                                    </label>
+                                    <label class="email" name="email">
+                                        <p>Ваш e-mail</p>
+                                        <input class="user_input" type="text" name="email"
+                                            placeholder="user@example.com">
+                                    </label>
+                                    <label class="email" name="phone">
+                                        <p>Ваш телефон</p>
+                                        <input class="user_input" type="tel" name="phone"
+                                            placeholder="+7 (701) 555 22 11">
+                                    </label>
 
-                                <label name="countries">
-                                    <p>Ваша страна</p>
-                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                    </select>
-                                </label>
+                                    <label name="countries">
+                                        <p>Ваша страна</p>
+                                        <select class="user_input" name="countries" placeholder="Kazakhstan">
+                                            <option value="Kaz">Kazakhstan</option>
+                                            <option value="Kaz">Kazakhstan</option>
+                                            <option value="Kaz">Kazakhstan</option>
+                                            <option value="Kaz">Kazakhstan</option>
+                                        </select>
+                                    </label>
 
-                                <label name="cities">
-                                    <p>Ваш город</p>
-                                    <select class="user_input" name="cities">
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                    </select>
-                                </label>
+                                    <label name="cities">
+                                        <p>Ваш город</p>
+                                        <select class="user_input" name="cities">
+                                            <option value="bish">Bishkek</option>
+                                            <option value="bish">Bishkek</option>
+                                            <option value="bish">Bishkek</option>
+                                            <option value="bish">Bishkek</option>
+                                        </select>
+                                    </label>
 
-                                <button class="change">Изменить</button>
+                                    <button class="change">Изменить</button>
+                                </form>
+
 
                                 <label name="change_pass">
                                     <p>Настройки безопасности</p>
-                                    <button class="change_pass">Поменять пароль</button>
+                                    <button id="change" class="navigation change_pass">Поменять пароль</button>
                                 </label>
-                            </form>
+                            </div>
                             <div class="profile_img">
                                 <p class="your">Фото профиля</p>
                                 <img src="./img/avatar.png" alt="avatar">
@@ -287,6 +292,85 @@
                                 <img src="./img/avatar.png" alt="avatar">
                                 <button class="add_foto">Добавить фото</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cont-change" class="profile page">
+                    <h1 class="welcome"></h1>
+                    <div class="block_data">
+                        <h2 class="title">Мой профиль. Поменять пароль</h2>
+                        <div class="row">
+                            <div class="change_left">
+                                <h2>Настройки безопасности. Изменение пароля</h2>
+                                <form name="change_pass_form">
+                                    <label class="email" name="phone">
+                                        <p>Текущий пароль</p>
+                                        <input class="user_input" type="password" name="password"
+                                            placeholder="* * * * * * * *">
+                                    </label>
+
+                                    <label class="email" name="phone">
+                                        <p>Новый пароль</p>
+                                        <input class="user_input" type="password" name="new_password"
+                                            placeholder="Введите пароль">
+                                    </label>
+
+                                    <label class="email" name="phone">
+                                        <p>Повторите новый пароль Новый пароль</p>
+                                        <input class="user_input" type="password" name="repeat_password"
+                                            placeholder="Введите пароль">
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="change_right">
+                                <button class="forgot_pass navigation" id="forgot">Забыли пароль?</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="cont-forgot" class="profile page">
+                    <h1 class="welcome"></h1>
+                    <div class="block_data">
+                        <h2 class="title">Мой профиль. Забыли пароль</h2>
+                        <div class="row">
+                            <h2>Настройки безопасности. Восстановление пароля</h2>
+                            <form name="pass_recovery">
+                                <label class="email" name="phone">
+                                    <p>Ваш e-mail (он же логин)</p>
+                                    <input class="user_input" type="email" name="recovery_to_email"
+                                        placeholder="user@example.com">
+                                </label>
+                                <button>Восстановить пароль</button>
+                            </form>
+                            <p class="spam_message">Мы отправили ссылку для восстановления пароля на вашу электронную
+                                почту. Если письмо не
+                                приходит, пожалуйста проверьте папку "Спам"</p>
+                            <button id="private" class="sign_in navigation">Войти в личный кабинет</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="cont-private" class="profile page">
+                    <h1 class="welcome"></h1>
+                    <div class="block_data">
+                        <h2 class="title">Мой профиль. Вход в личный кабинет</h2>
+                        <div class="row">
+                            <h2>Настройки безопасности. Вход в личный кабинет</h2>
+                            <form name="private_cabinet">
+                                <label class="email" name="phone">
+                                    <p>Ваш e-mail</p>
+                                    <input class="user_input" type="email" name="recovery_to_email"
+                                        placeholder="user@example.com">
+                                </label>
+                                <label class="email" name="phone">
+                                    <p>Ваш пароль</p>
+                                    <input class="user_input" type="password" name="recovery_to_email"
+                                        placeholder="* * * * * * * *">
+                                </label>
+                                <button>Восстановить пароль</button>
+                                <button class="registration">Зарегистрироваться</button>
+                            </form>
+                            <button class="forgot_pass navigation" id="forgot">Забыли пароль?</button>
                         </div>
                     </div>
                 </div>

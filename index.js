@@ -108,7 +108,7 @@
 // }
 
 let conts = document.querySelectorAll("main .page");
-let tabs = document.querySelectorAll(".layouts_buttons");
+let tabs = document.querySelectorAll(".navigation");
 
 conts.forEach((cont, idx) => {
     if (idx !== 0) {
@@ -116,18 +116,27 @@ conts.forEach((cont, idx) => {
     }
 });
 
-
 tabs.forEach((btn) => {
     let key = btn.id;
 
     btn.onclick = () => {
-        tabs.forEach(btn => btn.classList.remove('layouts_buttons_active'))
-        btn.classList.add('layouts_buttons_active')
+        tabs.forEach(btn => btn.classList.remove('layouts_buttons_active'));
 
-        conts.forEach(cont => cont.classList.add('hide'))
+        btn.classList.add('layouts_buttons_active');
 
-        let cont = document.querySelector(`#cont-${key}`)
-        cont.classList.remove('hide')
+        conts.forEach(cont => cont.classList.add('hide'));
 
+        let cont = document.querySelector(`#cont-${key}`);
+
+        if (cont) {
+            cont.classList.remove('hide');
+        }
+
+        if (key === "change" || key === "forgot" || key === "private") {
+            let profileButton = document.querySelector('#profile');
+            if (profileButton) {
+                profileButton.classList.add('layouts_buttons_active');
+            }
+        }
     }
-})
+});

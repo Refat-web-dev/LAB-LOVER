@@ -94,8 +94,8 @@ h6 {
 
 /*--------------------*/
 body {
+    padding: 20px;
     overflow: hidden;
-    padding: 1% 0;
 }
 
 .container {
@@ -160,6 +160,7 @@ main {
 .profile {}
 
 .welcome {
+    height: 18px;
     font-size: 18px;
     text-align: center;
 }
@@ -173,8 +174,147 @@ main {
 }
 
 .title {
+    margin-bottom: 5px;
     font-size: 18px;
     color: #7D7C7C;
+}
+
+#cont-change {
+    .row {
+        gap: 10px;
+        justify-content: start;
+    }
+
+    .change_right {
+        height: 96px;
+        display: flex;
+        align-items: end;
+
+        button {
+            height: 20px;
+        }
+    }
+
+    h2:not(.title) {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .change_left {
+        flex-direction: column;
+        justify-content: start;
+        gap: 15px;
+    }
+}
+
+#cont-forgot {
+    h2:not(.title) {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .row {
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    form {
+        width: fit-content;
+    }
+
+    button {
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #3F73D3;
+        color: white;
+        background-color: #3F73D3;
+        transition: .5s ease;
+    }
+
+    button:hover {
+        color: #3F73D3;
+        background-color: white;
+    }
+
+    .spam_message {
+        opacity: .5;
+        line-height: 18px;
+        font-size: 12px;
+        width: 525px;
+        margin-bottom: 15px;
+    }
+
+    .sign_in {
+        cursor: pointer;
+        width: 500px;
+        padding: 5px;
+        border-radius: 3px;
+        text-align: center;
+        border: 1px solid #3F73D3;
+        color: #3F73D3;
+        background-color: #fff;
+        transition: .5s ease;
+    }
+
+
+    .sign_in:hover {
+        color: white;
+        background-color: #3F73D3;
+    }
+}
+
+#cont-private {
+    h2:not(.title) {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    form {
+        width: fit-content;
+
+        button {
+            cursor: pointer;
+            width: 500px;
+            padding: 5px;
+            border-radius: 3px;
+            text-align: center;
+            border: 1px solid #3F73D3;
+            color: #fff;
+            background-color: #3F73D3;
+            transition: .5s ease;
+        }
+
+
+        button:hover {
+            color: #3F73D3;
+            background-color: #FFF;
+        }
+    }
+
+    .registration {
+        cursor: pointer;
+        width: 500px;
+        padding: 5px;
+        border-radius: 3px;
+        text-align: center;
+        border: 1px solid #3F73D3;
+        background-color: #fff;
+        color: #3F73D3;
+        transition: .5s ease;
+    }
+
+
+    .registration:hover {
+        background-color: #3F73D3;
+        color: #FFF;
+    }
+
 }
 
 .row {
@@ -190,6 +330,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -266,18 +407,20 @@ select {
 .add_foto {}
 
 footer {
+    padding-top: 20px;
+
     p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 
     .logo img {
-        width: 100px;
+        width: 80px;
     }
 
     .logo {
