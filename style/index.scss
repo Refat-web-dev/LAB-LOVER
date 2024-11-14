@@ -317,6 +317,37 @@ main {
 
 }
 
+#cont-support {
+    .row {
+        overflow-y: scroll;
+        /* Включаем вертикальную прокрутку */
+        scrollbar-width: thin;
+        /* Тонкая полоса прокрутки для Firefox */
+        scrollbar-color: black gray;
+        flex-direction: column;
+    }
+
+    .row::-webkit-scrollbar {
+        width: 8px;
+        /* Ширина вертикальной полосы прокрутки */
+    }
+
+    form {
+        width: fit-content;
+    }
+
+    .area_input {
+        all: unset;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        padding: 5px;
+        width: 96%;
+        height: 100px;
+        border-radius: 10px;
+        border: 1px solid #000;
+    }
+}
+
 .row {
     display: flex;
     height: 500px;
