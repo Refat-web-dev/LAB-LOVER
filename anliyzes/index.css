@@ -1,0 +1,43 @@
+@media (max-width:730px) {
+    .border_frame {
+        padding: 30px 10px !important;
+    }
+
+    .border_frame p {
+        font-size: 15px;
+    }
+
+    .searchBox {
+        display: block;
+    }
+
+    .searchBox p {
+        justify-content: start;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .searchBox input {
+        width: 100%;
+    }
+
+  
+}
+
+@media (max-width:450px) {
+    .border_frame p {
+        font-size: 13px;
+    }
+    .upload-area{
+        width: 100%;
+    }
+    .uploadBlock p{
+        font-size: 13px;
+    }
+    .reviewBlock{
+        padding: 40px 15px;
+    }
+    .blockBhb {
+        font-size: 13px;
+    }
+}

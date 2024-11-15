@@ -11,6 +11,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -257,7 +259,6 @@ main {
   flex-direction: column;
 }
 #cont-forgot form {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #cont-forgot button {
@@ -305,7 +306,6 @@ main {
   justify-content: start;
 }
 #cont-private form {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #cont-private form button {
@@ -364,7 +364,6 @@ main {
   background-color: #555;
 }
 #cont-support form {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #cont-support .area_input {
