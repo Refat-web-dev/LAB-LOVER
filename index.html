@@ -84,160 +84,328 @@
                     <div class="block_data">
                         <h2 class="title">My price</h2>
                         <div class="row">
-                            <!-- <form name="user_about">
-                                <label class="name" name="name">
-                                    <p>Ваше имя</p>
-                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
-                                </label>
-                                <label class="email" name="email">
-                                    <p>Ваш e-mail</p>
-                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
-                                </label>
-                                <label class="email" name="phone">
-                                    <p>Ваш телефон</p>
-                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
-                                </label>
-
-                                <label name="countries">
-                                    <p>Ваша страна</p>
-                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                    </select>
-                                </label>
-
-                                <label name="cities">
-                                    <p>Ваш город</p>
-                                    <select class="user_input" name="cities">
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                    </select>
-                                </label>
-
-                                <button class="change">Изменить</button>
-
-                                <label name="change_pass">
-                                    <p>Настройки безопасности</p>
-                                    <button class="change_pass">Поменять пароль</button>
-                                </label>
-                            </form> -->
-                            <div class="profile_img">
-                                <p class="your">Фото профиля</p>
-                                <img src="./img/avatar.png" alt="avatar">
-                                <button class="add_foto">Добавить фото</button>
+                            <div class="blocks">
+                                <h1>Выбирайте наиболее подходящий вариант для себя</h1>
+                                <br>
+                                <table class="table-analyses">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-analyses__header">Количество анализов</th>
+                                            <th class="table-analyses__header">Цена</th>
+                                            <th class="table-analyses__header">Действия</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-analyses__row">
+                                            <td class="table-analyses__cell">1 анализ</td>
+                                            <td class="table-analyses__cell">Бесплатно</td>
+                                            <td class="table-analyses__cell"><a href="#"
+                                                    class="table-analyses__action-link">Загрузить</a></td>
+                                        </tr>
+                                        <tr class="table-analyses__row">
+                                            <td class="table-analyses__cell">3 анализа</td>
+                                            <td class="table-analyses__cell">999 тг</td>
+                                            <td class="table-analyses__cell"><a href="#"
+                                                    class="table-analyses__action-link">Купить</a></td>
+                                        </tr>
+                                        <tr class="table-analyses__row">
+                                            <td class="table-analyses__cell">5 анализов</td>
+                                            <td class="table-analyses__cell">1399 тг</td>
+                                            <td class="table-analyses__cell"><a href="#"
+                                                    class="table-analyses__action-link">Купить</a></td>
+                                        </tr>
+                                        <tr class="table-analyses__row">
+                                            <td class="table-analyses__cell">10 анализов</td>
+                                            <td class="table-analyses__cell">1899 тг</td>
+                                            <td class="table-analyses__cell"><a href="#"
+                                                    class="table-analyses__action-link">Купить</a></td>
+                                        </tr>
+                                        <tr class="table-analyses__row">
+                                            <td class="table-analyses__cell">15 анализов</td>
+                                            <td class="table-analyses__cell">2399 тг</td>
+                                            <td class="table-analyses__cell"><a href="#"
+                                                    class="table-analyses__action-link">Купить</a></td>
+                                        </tr>
+                                        <tr class="table-analyses__row">
+                                            <td class="table-analyses__cell">25 анализов</td>
+                                            <td class="table-analyses__cell">2999 тг</td>
+                                            <td class="table-analyses__cell"><a href="#"
+                                                    class="table-analyses__action-link">Купить</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
                 <div id="cont-analyze" class="profile page">
                     <h1 class="welcome">Analyze</h1>
                     <div class="block_data">
                         <h2 class="title">Мои анализы</h2>
-                        <div class="row">
-                            <form name="user_about">
-                                <label class="name" name="name">
-                                    <p>Ваше имя</p>
-                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
+                        <div class="border_frame">
+                            <p>Количество доступных анализов: <b>3 из 5</b></p>
+                            <br><br>
+                            <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data"
+                                class="upload-form">
+                                <label id="upload" class="custom-file-upload navigation">
+                                    Выберите файл
                                 </label>
-                                <label class="email" name="email">
-                                    <p>Ваш e-mail</p>
-                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
-                                </label>
-                                <label class="email" name="phone">
-                                    <p>Ваш телефон</p>
-                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
-                                </label>
-
-                                <label name="countries">
-                                    <p>Ваша страна</p>
-                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                    </select>
-                                </label>
-
-                                <label name="cities">
-                                    <p>Ваш город</p>
-                                    <select class="user_input" name="cities">
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                    </select>
-                                </label>
-
-                                <button class="change">Изменить</button>
-
-                                <label name="change_pass">
-                                    <p>Настройки безопасности</p>
-                                    <button class="change_pass">Поменять пароль</button>
-                                </label>
+                                <input type="file" id="fileInput" name="file" accept=".jpg, .jpeg, .png, .pdf">
                             </form>
-                            <div class="profile_img">
-                                <p class="your">Фото профиля</p>
-                                <img src="./img/avatar.png" alt="avatar">
-                                <button class="add_foto">Добавить фото</button>
+
+                            <br><br>
+                            <div class="searchBox">
+                                <input type="search" name="" id="searchAnalyze" placeholder="Поиск анализа">
+                                <p>
+                                    Фильтровать
+                                    <img src="./img/Vector.png" alt="">
+                                </p>
+                            </div>
+                            <br><br>
+                            <div class="tableBox">
+                                <iframe src="./swiper/index.html" width="100%" height="500">
+
+                                </iframe>
+                            </div>
+
+                            <br><br><br><br><br><br><br>
+                            <div class="Charts">
+
+                                <select id="chartSelect">
+                                    <option value="0">Лейкоцит1</option>
+                                    <option value="1">Лейкоцит2</option>
+                                    <option value="2">Лейкоцит3</option>
+                                    <option value="3">Лейкоцит4</option>
+                                </select>
+                                <br>
+                                <canvas id="myChart"></canvas>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div id="cont-upload" class="profile page">
+                    <h1 class="welcome"></h1>
+                    <div class="block_data">
+                        <h2 class="title">Мои анализы</h2>
+                        <div class="row">
+                            <div class="uploadBlock">
+                                <p>Количество доступных анализов: 1 </p><br><br>
+                                <p>Ваш первый анализ - бесплатно! Загрузите файл и попробуйте наш сервис без риска!</p>
+                                <br>
+                                <p>Перетащите файл сюда или нажмите для выбора</p>
+                                <br>
+
+                                <div id="uploadForm" class="upload-area">
+                                    <img src="./img/Vector (2).png" alt="Upload Icon" width="40">
+                                    <label>Поддерживаемые форматы: PDF</label>
+                                    <input type="file" id="fileInput" accept="application/pdf">
+                                </div>
+
+                                <button id="review" class="result-button navigation">Результаты</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="cont-review" class="profile page z-index">
+                    <h1 class="welcome"></h1>
+                    <div class="block_data">
+                        <h2 class="title">Мои анализы (просмотр)</h2>
+                        <div class="row reviewBlock">
+
+                            <div class="blockBhb">
+                                <h2>Количество доступных анализов: <b> 0</b> </h2>
+                                <br><br>
+                                <h3><b>Интерпретация лабораторных анализов</b></h3><br>
+                                <div class="frCase">
+                                    <p>Имя: Иван Иванов</p><br>
+                                    <p>Дата сдачи анализов: 04.11.2022</p><br>
+                                    <p>Количество анализов в отчёте: <b>1</b></p><br>
+                                    <p>Перечень анализов: </p><br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Биохимический анализ крови
+                                    </label>
+                                </div>
+
+                                <br><br>
+
+                                <div class="scCase">
+                                    <h3><b> Интерпретация результатов</b></h3>
+                                    <br>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Глюкоза
+                                    </label><br>
+                                    <p>Результат пациента: <b>4.75 mmol/I</b></p><br>
+                                    <p>Референтные значения (норма): <b>3.89 - 5.83 mmol/I</b></p><br>
+                                    <p>Отклонение от нормы: <b> Нет. </b></p>
+                                </div>
+                                <br><br>
+
+                                <div class="thCase">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Кальций общий (Са)
+                                    </label><br>
+                                    <p>Результат пациента: <b>2.56 mmol/I</b></p><br>
+                                    <p>Референтные значения (норма): <b> 2.10 - 2.55 mmol/I</b></p><br>
+                                    <p>Отклонение от нормы: <u>Да.</u> Незначительное повышение на <b> 0.01 mmol/I </b>
+                                    </p><br>
+                                    <p>Описание параметра: Кальций является важным минералом, необходимым для здоровья
+                                        костей, зубов,
+                                        а также для нормального функционирования мышц и нервной системы. Незначительное
+                                        повышение уровня кальция может быть связано с диетическими факторами, приемом
+                                        добавок или нарушением обмена веществ. Важно следить за уровнем кальция, так как
+                                        его значительное повышение может привести к гиперкальциемии, что может вызвать
+                                        различные симптомы и осложнения.</p>
+                                </div>
+                                <br><br>
+                                <div class="ftCase">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Креатинин в сыворотке
+                                    </label><br>
+
+                                    <p>Результат пациента: <b>109.79 umol/I</b></p><br>
+                                    <p>Референтные значения (норма): <b>63.6 - 110.5 umol/I </b></p><br>
+                                    <p>Отклонение от нормы: <b> Нет.</b> Значение близко к верхней границе нормы. </p>
+                                </div>
+                                <br><br>
+
+                                <div class="fvCase">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Магний (Mg)
+                                    </label><br>
+                                    <p>Результат пациента: <b>0.87 mmol/I</b></p><br>
+                                    <p>Референтные значения (норма): <b>0.65 - 1.05 mmol/I </b></p><br>
+                                    <p>Отклонение от нормы: <b>Нет.</b></p>
+                                </div>
+                                <br><br>
+                                <div class="sxCase">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Мочевая кислота в сыворотке </label><br>
+                                    <p>Результат пациента: <b>321.84 umol/I</b></p><br>
+                                    <p>Референтные значения (норма): <b>210 - 420 umol/I </b></p><br>
+                                    <p>Отклонение от нормы: <b>Нет. </b></p>
+                                </div>
+
+                                <div class="sveCase">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Мочевина в сыворотке
+                                    </label><br>
+                                    <p>Результат пациента: <b>3.98 mmol/I</b></p><br>
+                                    <p>Референтные значения (норма): <b>3.0 - 8.2 mmol/I </b></p><br>
+                                    <p>Отклонение от нормы: <b>Нет.</b></p>
+                                </div>
+                                <br><br>
+                                <div class="conclusionCase">
+                                    <h3><b>Заключение</b></h3>
+                                    <br>
+                                    <p>На основании всех полученных результатов можно сделать следующие выводы: </p><br>
+                                    <ul>
+                                        <li>Большинство показателей находятся в пределах нормы, за исключением
+                                            незначительного повышения уровня общего кальция, что может быть связано с
+                                            диетическими факторами или приемом добавок.</li>
+                                    </ul>
+                                    <br>
+                                    <h3><b>Возможные состояния или факторы</b></h3>
+                                    <br>
+                                    <ul>
+                                        <li>Отклонение кальция на 0.01 mmol/I, незначительное повышение, может быть
+                                            связано с диетическими факторами или приемом добавок кальция. </li>
+                                    </ul>
+                                    <br>
+                                    <h3><b>Рекомендации по обращению к врачу</b></h3><br>
+                                    <p>Один или несколько ваших анализов показали результаты, которые несколько
+                                        <b>выходят
+                                            за пределы нормы.</b> Для вашего спокойствия и уверенности в состоянии
+                                        здоровья
+                                        рекомендуется проконсультироваться с врачом. Посетите <b>терапевта</b>,
+                                        специалист
+                                        сможет дать профессиональную оценку, объяснить возможные причины таких
+                                        результатов и при необходимости предложить рекомендации по поддержанию или
+                                        улучшению вашего здоровья
+                                    </p>
+                                    <br><br>
+                                    <h3><b>Рекомендации по дальнейшим действиям</b></h3><br><br>
+                                    <h3><b>Советы по питанию</b></h3>
+                                    <br>
+                                    <p>Убедитесь, что Ваш рацион сбалансирован и не содержит избыточного количества
+                                        кальция. Рассмотрите возможность уменьшения потребления молочных продуктов и
+                                        добавок кальция, если они присутствуют в большом количестве. </p>
+                                    <br>
+                                    <h3><b>Советы по образу жизни</b></h3><br>
+                                    <p>Поддерживайте активный образ жизни, включающий регулярные физические упражнения,
+                                        которые способствуют укреплению костей и улучшению обмена веществ.</p>
+                                    <br>
+                                    <h3><b>Дополнительные исследования</b></h3><br>
+                                    <p>Если уровень кальция продолжает оставаться повышенным, рассмотрите возможность
+                                        проведения дополнительных анализов для оценки функции паращитовидных желез и
+                                        обмена кальция.</p>
+                                    <br>
+                                    <p><b>Внимание!</b> Данная интерпретация результатов анализов не является диагнозом
+                                        и не
+                                        заменяет профессиональную медицинскую консультацию. Интерпретация предназначена
+                                        исключительно для общего ознакомления и не должна служить основанием для
+                                        самостоятельного принятия решений о здоровье или самолечения. </p>
+                                    <br>
+                                    <p><b>Если вы заметили у себя необычные симптомы, такие как недомогание, слабость
+                                            или другие изменения в самочувствии, пожалуйста, не занимайтесь самолечением
+                                            и как можно скорее обратитесь к врачу для точного определения состояния и
+                                            получения квалифицированной помощи. </b></p>
+
+                                    <br><br>
+                                    <p><b>Lab Lover.</b> Здоровье в деталях!</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div id="cont-history" class="profile page">
                     <h1 class="welcome">History</h1>
                     <div class="block_data">
                         <h2 class="title">Мой профиль</h2>
                         <div class="row">
-                            <form name="user_about">
-                                <label class="name" name="name">
-                                    <p>Ваше имя</p>
-                                    <input class="user_input" type="text" name="name" placeholder="Иван Иванов">
-                                </label>
-                                <label class="email" name="email">
-                                    <p>Ваш e-mail</p>
-                                    <input class="user_input" type="text" name="email" placeholder="user@example.com">
-                                </label>
-                                <label class="email" name="phone">
-                                    <p>Ваш телефон</p>
-                                    <input class="user_input" type="tel" name="phone" placeholder="+7 (701) 555 22 11">
-                                </label>
+                          <div class="blockFl">
 
-                                <label name="countries">
-                                    <p>Ваша страна</p>
-                                    <select class="user_input" name="countries" placeholder="Kazakhstan">
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Kazakhstan</option>
-                                        <option value="Kaz">Uzbekistan</option>
-                                    </select>
-                                </label>
+                            <p>Количество доступных анализов: <b>3 из 5</b></p>
+                            <br><br>
+                           <p>История ваших заказов</p>
 
-                                <label name="cities">
-                                    <p>Ваш город</p>
-                                    <select class="user_input" name="cities">
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                        <option value="bish">Bishkek</option>
-                                    </select>
-                                </label>
-
-                                <button class="change">Изменить</button>
-
-                                <label name="change_pass">
-                                    <p>Настройки безопасности</p>
-                                    <button class="change_pass">Поменять пароль</button>
-                                </label>
-                            </form>
-                            <div class="profile_img">
-                                <p class="your">Фото профиля</p>
-                                <img src="./img/avatar.png" alt="avatar">
-                                <button class="add_foto">Добавить фото</button>
+                            <br><br>
+                            <div class="searchBox">
+                                <input type="search" name="" id="searchAnalyze" placeholder="Поиск анализа">
+                                <p>
+                                    Фильтровать
+                                    <img src="./img/Vector.png" alt="">
+                                </p>
                             </div>
+                            <br><br>
+                            <iframe src="./swiper/history.html" width="100%" height="500">
+
+                            </iframe>
+
+
+
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -264,7 +432,8 @@
                                 </label>
                                 <label class="message" name="phone">
                                     <p>Сообщение</p>
-                                    <textarea rows="4" cols="50" wrap="soft" name="message" class="area_input"></textarea>
+                                    <textarea rows="4" cols="50" wrap="soft" name="message"
+                                        class="area_input"></textarea>
                                 </label>
                                 <button class="change">Отправить сообщение</button>
 
@@ -324,7 +493,8 @@
                                 </label>
                                 <button>Восстановить пароль</button>
                             </form>
-                            <p class="spam_message">Мы отправили ссылку для восстановления пароля на вашу электронную
+                            <p class="spam_message">Мы отправили ссылку для восстановления пароля на вашу
+                                электронную
                                 почту. Если письмо не
                                 приходит, пожалуйста проверьте папку "Спам"</p>
                             <button id="private" class="sign_in navigation">Войти в личный кабинет</button>
@@ -362,6 +532,7 @@
             <p class="copyright">Все права защищены</p>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./index.js"></script>
 </body>
 

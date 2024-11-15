@@ -11,6 +11,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -201,7 +203,6 @@ main {
   flex-direction: column;
 }
 #cont-forgot form {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #cont-forgot button {
@@ -249,7 +250,6 @@ main {
   justify-content: start;
 }
 #cont-private form {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #cont-private form button {
@@ -296,7 +296,6 @@ main {
   /* Ширина вертикальной полосы прокрутки */
 }
 #cont-support form {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #cont-support .area_input {
@@ -399,4 +398,228 @@ footer .logo img {
 }
 footer .logo {
   margin-bottom: 0;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.border_frame {
+  height: 500px;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid #3F73D3;
+  border-radius: 7px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.border_frame::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.border_frame::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.border_frame::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.border_frame::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.searchBox {
+  display: flex;
+  gap: 15px;
+}
+.searchBox input {
+  border: 1px solid black;
+  width: 50%;
+  padding: 5px;
+  border-radius: 3px;
+  background: url("/img/Vector (1).png") no-repeat right 10px center;
+  background-size: 16px;
+  /* Размер иконки */
+}
+.searchBox p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Основные стили для формы */
+.upload-form {
+  width: 150px;
+  font-size: 10px;
+}
+
+/* Стиль для кнопки загрузки файла */
+.custom-file-upload {
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+/* Скрываем стандартное поле загрузки файла */
+#fileInput {
+  display: none;
+}
+
+#myChart {
+  width: 100% !important;
+}
+
+.Charts {
+  width: 100%;
+  margin-top: -300px;
+}
+
+#chartSelect {
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Центрирование по вертикали */
+  width: 200px;
+  padding: 10px 0;
+  /* Добавляет отступы сверху и снизу */
+  box-sizing: border-box;
+  /* Учитывает padding в общей ширине */
+  background-color: #f4f4f4;
+  /* Фоновый цвет для улучшения визуала */
+  border-radius: 8px;
+  /* Скругленные углы */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* Легкая тень для выделения */
+  color: #000;
+}
+
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  border: 2px dashed #7aa7df;
+  background-color: #e6edf9;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.upload-area input[type=file] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.upload-area label {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.result-button {
+  display: block;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  gap: 3px;
+}
+
+.checkbox input {
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.reviewBlock {
+  overflow: scroll;
+  line-height: 18px;
+}
+
+.reviewBlock::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.reviewBlock::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.reviewBlock::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.reviewBlock::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.table-analyses {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.table-analyses__header,
+.table-analyses__cell {
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-analyses__header {
+  font-weight: normal;
+  color: #666;
+}
+
+.table-analyses__row:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.table-analyses__action-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.table-analyses__action-link:hover {
+  text-decoration: underline;
+}
+
+.blocks, .blockFl, .blockBhb {
+  width: 100%;
+}
+
+/* #cont-upload{
+    z-index:;
+} *//*# sourceMappingURL=index.css.map */
