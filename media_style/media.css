@@ -28,4 +28,47 @@
   #cont-profile .row .right {
     order: 2;
   }
+  #cont-change .row {
+    flex-direction: column;
+  }
+  #cont-change .user_input,
+  #cont-change .change,
+  #cont-change .change_pass {
+    width: 100%;
+  }
+  #cont-forgot form,
+  #cont-forgot .user_input,
+  #cont-forgot button,
+  #cont-forgot .sign_in {
+    width: 100%;
+  }
+  #cont-forgot .spam_message {
+    font-size: 10px;
+    width: 300px;
+  }
+  #cont-private form,
+  #cont-private .registration,
+  #cont-private .user_input {
+    width: 100%;
+  }
+  #cont-private form button {
+    width: 100%;
+  }
+  #cont-support form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 674px) {
+  #cont-forgot h2:not(.title),
+  #cont-private h2:not(.title) {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  #cont-change h2:not(.title) {
+    font-size: 12px;
+  }
+  #cont-support h2:not(.title) {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=media.css.map */
