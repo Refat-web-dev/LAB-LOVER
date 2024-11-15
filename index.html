@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./media_style/media.css">
     <title>Profile</title>
 </head>
 
 <body>
     <div class="container">
-        <header class="logo"><img src="./img/ЛОГО.png" alt="Logo"></header>
+        <header class="logo">
+            <div class="burger"></div><img src="./img/ЛОГО.png" alt="Logo">
+        </header>
         <div class="layouts">
             <aside>
                 <button id="profile" class="navigation layouts_buttons layouts_buttons_active">Мой профиль</button>
@@ -19,6 +22,8 @@
                 <button id="history" class="navigation layouts_buttons">История заказов</button>
                 <button id="support" class="navigation layouts_buttons">Поддержка</button>
             </aside>
+            <div class="canvas">
+            </div>
             <main>
                 <div id="cont-profile" class="profile page">
                     <h1 class="welcome">Добро пожаловать, Иван!</h1>
@@ -246,7 +251,7 @@
                     <div class="block_data">
                         <h2 class="title">Поддержка</h2>
                         <div class="row">
-                            <h2>Количество доступных анализов: 3 из 5</h2>
+                            <h2 class="amount_of_analyzes">Количество доступных анализов: 3 из 5</h2>
                             <form name="user_about">
                                 <p>Форма обратной связи</p>
                                 <label class="name" name="name">
@@ -264,14 +269,21 @@
                                 </label>
                                 <label class="message" name="phone">
                                     <p>Сообщение</p>
-                                    <textarea rows="4" cols="50" wrap="soft" name="message" class="area_input"></textarea>
+                                    <textarea rows="4" cols="50" wrap="soft" name="message"
+                                        class="area_input"></textarea>
                                 </label>
                                 <button class="change">Отправить сообщение</button>
 
-                                <label name="change_pass">
-                                    <p>Настройки безопасности</p>
-                                    <button class="change_pass">Поменять пароль</button>
-                                </label>
+                                <div class="about">
+                                    <h3>Контактная информация</h3>
+                                    <p>Телефон: +7 (727) 258 58 88</p>
+                                    <p>Email: support@lablover.kz</p>
+                                    <div><span>Социальные сети:</span>
+                                        <img src="./img/facebook.svg" alt="facebook">
+                                        <img src="./img/instagram.svg" alt="instagram">
+                                        <img src="./img/vk.svg" alt="vk">
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
