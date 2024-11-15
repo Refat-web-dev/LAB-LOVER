@@ -95,7 +95,8 @@ h6 {
 /*--------------------*/
 body {
     padding: 20px;
-    overflow: hidden;
+    // overflow: hidden;
+    // overflow-y: scroll;
 }
 
 header {
@@ -106,12 +107,18 @@ header {
 
 }
 
-.burger {
+.burger_btn {
     position: absolute;
-    top: 40px;
     left: 40px;
-    width: 30px;
-    height: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 3px;
     // background-color: #3F73D3;
     background-color: #3F73D3;
     // transform: rotate(45deg);
@@ -121,9 +128,9 @@ header {
 .burger::after {
     content: "";
     position: absolute;
-    top: -10px;
-    width: 30px;
-    height: 5px;
+    bottom: -14px;
+    width: 20px;
+    height: 3px;
     // transform: rotate(-45deg);
     background-color: #3F73D3;
     transition: .5s ease;
@@ -133,9 +140,9 @@ header {
 .burger::before {
     content: "";
     position: absolute;
-    bottom: -10px;
-    width: 30px;
-    height: 5px;
+    bottom: -7px;
+    width: 20px;
+    height: 3px;
     // transform: rotate(45deg);
     background-color: #3F73D3;
     transition: .5s ease;
@@ -226,7 +233,8 @@ main {
 
 .hide {
     position: absolute;
-    right: -100%;
+    top: -1200%;
+    left: -1200%;
     opacity: 0;
 }
 
@@ -742,7 +750,7 @@ footer {
 }
 
 
-.checkbox{
+.checkbox {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -750,11 +758,12 @@ footer {
     gap: 3px;
 }
 
-.checkbox input{
+.checkbox input {
     margin-bottom: 1px;
     cursor: pointer;
 }
-.reviewBlock{
+
+.reviewBlock {
     overflow: scroll;
     line-height: 18px;
 }
@@ -785,30 +794,39 @@ footer {
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-  }
-  .table-analyses__header,
-  .table-analyses__cell {
+}
+
+.table-analyses__header,
+.table-analyses__cell {
     border: 1px solid #d9d9d9;
     padding: 10px;
     text-align: center;
-  }
-  .table-analyses__header {
+}
+
+.table-analyses__header {
     font-weight: normal;
     color: #666;
-  }
-  .table-analyses__row:nth-child(even) {
+}
+
+.table-analyses__row:nth-child(even) {
     background-color: #f5f5f5;
-  }
-  .table-analyses__action-link {
+}
+
+.table-analyses__action-link {
     color: #007bff;
     text-decoration: none;
-  }
-  .table-analyses__action-link:hover {
+}
+
+.table-analyses__action-link:hover {
     text-decoration: underline;
-  }
-.blocks, .blockFl, .blockBhb{
+}
+
+.blocks,
+.blockFl,
+.blockBhb {
     width: 100%;
 }
+
 /* #cont-upload{
     z-index:;
 } */

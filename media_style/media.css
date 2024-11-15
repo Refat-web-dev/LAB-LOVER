@@ -7,4 +7,25 @@
     height: 100%;
     z-index: 1;
   }
+  .burger {
+    display: block;
+  }
+  .welcome {
+    margin-bottom: 30px;
+  }
+  #cont-profile .row {
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    flex-direction: column;
+  }
+  #cont-profile .row .user_input,
+  #cont-profile .row .change,
+  #cont-profile .row .change_pass {
+    width: 100%;
+  }
+  #cont-profile .row .right {
+    order: 2;
+  }
 }/*# sourceMappingURL=media.css.map */

@@ -93,7 +93,7 @@ document.getElementById('chartSelect').addEventListener('change', function (even
 
 // burger 
 
-let burger = document.querySelector(".burger")
+let burger = document.querySelector(".burger_btn")
 let aside = document.querySelector("aside")
 let canvas = document.querySelector(".canvas")
 

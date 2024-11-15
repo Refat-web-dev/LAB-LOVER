@@ -93,7 +93,6 @@ h6 {
 /*--------------------*/
 body {
   padding: 20px;
-  overflow: hidden;
 }
 
 header {
@@ -103,12 +102,18 @@ header {
   justify-content: center;
 }
 
-.burger {
+.burger_btn {
   position: absolute;
-  top: 40px;
   left: 40px;
-  width: 30px;
-  height: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 3px;
   background-color: #3F73D3;
   transition: 0.5s ease;
 }
@@ -116,9 +121,9 @@ header {
 .burger::after {
   content: "";
   position: absolute;
-  top: -10px;
-  width: 30px;
-  height: 5px;
+  bottom: -14px;
+  width: 20px;
+  height: 3px;
   background-color: #3F73D3;
   transition: 0.5s ease;
 }
@@ -126,9 +131,9 @@ header {
 .burger::before {
   content: "";
   position: absolute;
-  bottom: -10px;
-  width: 30px;
-  height: 5px;
+  bottom: -7px;
+  width: 20px;
+  height: 3px;
   background-color: #3F73D3;
   transition: 0.5s ease;
 }
@@ -210,7 +215,8 @@ main {
 
 .hide {
   position: absolute;
-  right: -100%;
+  top: -1200%;
+  left: -1200%;
   opacity: 0;
 }
 
@@ -713,7 +719,9 @@ footer .logo {
   text-decoration: underline;
 }
 
-.blocks, .blockFl, .blockBhb {
+.blocks,
+.blockFl,
+.blockBhb {
   width: 100%;
 }
 
