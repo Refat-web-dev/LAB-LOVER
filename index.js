@@ -131,14 +131,17 @@ labels.forEach(label => {
     let closed = true;
 
     viewIcon.onclick = () => {
+
         if (closed) {
             closed = false;
             passwordInput.type = "text";
-            viewIcon.style.backgroundImage = 'url("./img/view.png")';
+            // viewIcon.style.backgroundImage = 'url("./img/view.png")';
+            viewIcon.classList.add("show_pass")
         } else {
             closed = true;
             passwordInput.type = "password";
-            viewIcon.style.backgroundImage = 'url("./img/hide.png")';
+            // viewIcon.style.backgroundImage = 'url("./img/hide.png")';
+            viewIcon.classList.remove("show_pass")
         }
     };
 });
