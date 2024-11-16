@@ -521,7 +521,7 @@ label {
     right: 5px;
     width: 20px;
     height: 20px;
-    background-image: url("./img/hide.png");
+    background-image: url("/img/hide.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -529,7 +529,7 @@ label {
 }
 
 .show_pass {
-    background-image: url("./img/view.png");
+    background-image: url("/img/view.png");
 }
 
 .user_input,
