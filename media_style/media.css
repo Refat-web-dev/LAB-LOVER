@@ -21,8 +21,8 @@
     flex-direction: column;
   }
   #cont-profile .row .user_input,
-#cont-profile .row .change,
-#cont-profile .row .change_pass {
+  #cont-profile .row .change,
+  #cont-profile .row .change_pass {
     width: 100%;
   }
   #cont-profile .row .right {
@@ -32,14 +32,14 @@
     flex-direction: column;
   }
   #cont-change .user_input,
-#cont-change .change,
-#cont-change .change_pass {
+  #cont-change .change,
+  #cont-change .change_pass {
     width: 100%;
   }
   #cont-forgot form,
-#cont-forgot .user_input,
-#cont-forgot button,
-#cont-forgot .sign_in {
+  #cont-forgot .user_input,
+  #cont-forgot button,
+  #cont-forgot .sign_in {
     width: 100%;
   }
   #cont-forgot .spam_message {
@@ -47,8 +47,8 @@
     width: 300px;
   }
   #cont-private form,
-#cont-private .registration,
-#cont-private .user_input {
+  #cont-private .registration,
+  #cont-private .user_input {
     width: 100%;
   }
   #cont-private form button {
@@ -72,7 +72,7 @@
 }
 @media only screen and (max-width: 674px) {
   #cont-forgot h2:not(.title),
-#cont-private h2:not(.title) {
+  #cont-private h2:not(.title) {
     font-size: 12px;
   }
   .blocks h1 {
@@ -86,7 +86,7 @@
     white-space: nowrap !important;
   }
   .order-table__header,
-.order-table__cell {
+  .order-table__cell {
     padding: 8px 5px !important;
   }
 }
@@ -112,5 +112,4 @@
   .analysis-list input[type=checkbox] {
     margin-right: 5px;
   }
-}
-/*# sourceMappingURL=media.css.map */
+}/*# sourceMappingURL=media.css.map */

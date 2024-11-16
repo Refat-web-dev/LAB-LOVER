@@ -39,7 +39,7 @@ tabs.forEach((btn) => {
                 profileButton.classList.add('layouts_buttons_active');
             }
         }
-        if (key === "upload" || key === "review" || key === "loading" ) {
+        if (key === "upload" || key === "review" || key === "loading") {
             let profileButton = document.querySelector('#analyze');
             zIndexCont.style.display = "block"
 
@@ -114,3 +114,25 @@ canvas.onclick = () => {
         canvas.style.display = "none"
     }, 500);
 }
+
+let labels = document.querySelectorAll(".change_pass_form label");
+
+labels.forEach(label => {
+    const viewIcon = label.querySelector(".view");
+    const passwordInput = label.querySelector("input");
+
+    let closed = true;
+
+    viewIcon.onclick = () => {
+        if (closed) {
+            closed = false;
+            passwordInput.type = "text";
+            viewIcon.style.backgroundImage = 'url("../img/view.png")';
+        } else {
+            closed = true;
+            passwordInput.type = "password";
+            viewIcon.style.backgroundImage = 'url("../img/hide.png")';
+        }
+    };
+});
+
