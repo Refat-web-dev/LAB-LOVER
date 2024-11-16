@@ -146,3 +146,32 @@ labels.forEach(label => {
     };
 });
 
+
+
+
+document.querySelector('.shifr').addEventListener('click', function() {
+    // Получаем все чекбоксы
+    const checkboxes = document.querySelectorAll('input[name="analysis"]:checked');
+    const count = checkboxes.length;  // Количество выбранных чекбоксов
+
+    // Обновляем количество в модальном окне
+    document.getElementById('checkboxCount').textContent = count;
+
+    // Показываем модальное окно
+    document.getElementById('modal').classList.remove('hiddenTw');
+});
+
+// Закрытие модального окна
+document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('modal').classList.add('hiddenTw');
+});
+
+
+const form = document.getElementById('myForm');
+const button = document.getElementById('registrations');
+
+button.addEventListener('click', function(event) {
+  event.preventDefault();
+
+  console.log('Form submitted without page reload');
+});

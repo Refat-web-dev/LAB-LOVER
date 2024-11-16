@@ -85,6 +85,23 @@
 
 
     }
+    #cont-registrations {
+
+        form,
+        .registration,
+        .user_input {
+            width: 100%;
+        }
+
+        form {
+            button {
+                width: 100%;
+
+            }
+        }
+
+
+    }
 
     #cont-support {
         form {
@@ -110,7 +127,8 @@
 @media only screen and (max-width: 674px) {
 
     #cont-forgot,
-    #cont-private {
+    #cont-private,
+    #cont-registrations {
         h2:not(.title) {
             font-size: 12px;
         }

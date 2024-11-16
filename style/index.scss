@@ -902,3 +902,158 @@ footer {
 /* #cont-upload{
     z-index:;
 } */
+
+.hiddenTw {
+    display: none !important;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#closeModal {
+    background-color: #007bff;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 6px;
+    transition: .5s ease;
+}
+
+.shifr {
+    width: 100%;
+    text-align: center;
+    background-color: #0056b3;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 6px;
+    transition: .5s ease;
+}
+
+.shifr:hover {
+    background-color: #888;
+    transition: .5s ease;
+}
+
+#closeModal:hover {
+    background-color: #888;
+    transition: .5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* 
+.regisBtn {
+    cursor: pointer;
+    width: 500px;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #3F73D3;
+    color: #fff;
+    background-color: #3F73D3;
+    transition: 0.5s ease;
+}
+
+.regisBtn:hover {
+    background-color: white;
+}
+
+
+ */
+
+
+#cont-registrations {
+    h2:not(.title) {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    form {
+        width: fit-content;
+
+        button {
+            cursor: pointer;
+            width: 500px;
+            padding: 5px;
+            border-radius: 3px;
+            text-align: center;
+            border: 1px solid #3F73D3;
+            color: #fff;
+            background-color: #3F73D3;
+            transition: .5s ease;
+        }
+
+
+        button:hover {
+            color: #3F73D3;
+            background-color: #FFF;
+        }
+    }
+
+    .registration {
+        cursor: pointer;
+        width: 500px;
+        padding: 5px;
+        border-radius: 3px;
+        text-align: center;
+        border: 1px solid #3F73D3;
+        background-color: #fff;
+        color: #3F73D3;
+        transition: .5s ease;
+    }
+
+
+    .registration:hover {
+        background-color: #3F73D3;
+        color: #FFF;
+    }
+
+    .googleRegis {
+        cursor: pointer;
+        border: 1px solid #3F73D3;
+        color: #fff;
+        background-color: #dfdfdf;
+        transition: 0.5s ease;
+        text-align: center;
+    }
+}
+
+
+
+
+.googleRegis:hover {
+    background-color: white;
+}

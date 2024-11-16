@@ -210,7 +210,7 @@
                                     <input type="file" id="fileInput" accept="application/pdf">
                                 </div>
 
-                                <button id="review" class="result-button navigation">Результаты</button>
+                                <button id="review" class="result-button navigation">Загрузить</button>
                             </div>
 
 
@@ -266,6 +266,15 @@
                                 <p><strong>Количество анализов в отчёте:</strong> 7</p><br>
                                 <p>Пожалуйста, выберите, какие анализы вы хотели бы расшифровать. Отметьте нужные
                                     чекбоксы.</p>
+                                <br><br>
+                                <button class="shifr">Расшифровать</button>
+                                <br><br>
+                            </div>
+                            <div id="modal" class="modal hiddenTw">
+                                <div class="modal-content">
+                                    <p>Вы выбрали <span id="checkboxCount">0</span> анализов для расшифровки.</p>
+                                    <br> <button id="closeModal">Закрыть</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -565,13 +574,51 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div id="cont-registrations" class="profile page">
+                    <h1 class="welcome"></h1>
+                    <div class="block_data">
+                        <h2 class="title">Поддержка</h2>
+                        <div class="row">
+                            <div class="blockRegis">
+                                <form name="private_cabinet" class="private_cabinet">
+                                    <label class="email" name="phone">
+                                        <br>
+                                        <p>Ваш e-mail</p>
+                                        <input class="user_input" type="email" name="recovery_to_email"
+                                            placeholder="user@example.com">
+                                    </label>
+                                    <label class="email password_recovery" name="phone">
+                                        <p>Ваш пароль</p>
+                                        <input class="user_input" type="password" name="recovery_to_email"
+                                            placeholder="* * * * * * * *">
+                                        <div class="view_pass"></div>
+                                    </label>
+                                    <label class="email password_recovery" name="phone">
+                                        <p>Повторите пароль</p>
+                                        <input class="user_input" type="password" name="recovery_to_email"
+                                            placeholder="* * * * * * * *">
+                                        <div class="view_pass"></div>
+                                    </label>
+                                    <button class="regisBtn">Восстановить пароль</button>
+                                    <button class="regisBtn">Зарегистрироваться</button>
+                                    <button class="googleRegis"><img src="./img/google.png" alt=""></button>
+                                </form>
+                                <button class="forgot_pass">Забыли пароль?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div id="cont-private" class="profile page">
                     <h1 class="welcome"></h1>
                     <div class="block_data">
                         <h2 class="title">Мой профиль. Вход в личный кабинет</h2>
                         <div class="row">
                             <h2>Вход в личный кабинет</h2>
-                            <form name="private_cabinet" class="private_cabinet">
+                            <form name="private_cabinet" id="myForm" class="private_cabinet">
                                 <label class="email" name="phone">
                                     <p>Ваш e-mail</p>
                                     <input class="user_input" type="email" name="recovery_to_email"
@@ -580,15 +627,20 @@
                                 <label class="email password_recovery" name="phone">
                                     <p>Ваш пароль</p>
                                     <input class="user_input" type="password" name="recovery_to_email"
-                                        placeholder="* * * * * * * *"><div class="view_pass"></div>
+                                        placeholder="* * * * * * * *">
+                                    <div class="view_pass"></div>
                                 </label>
                                 <button>Восстановить пароль</button>
-                                <button class="registration">Зарегистрироваться</button>
+                                <button class="navigation" id="registrations">Зарегистрироваться</button>
                             </form>
                             <button class="forgot_pass navigation" id="forgot">Забыли пароль?</button>
                         </div>
                     </div>
                 </div>
+
+
+
+
             </main>
         </div>
         <footer>
