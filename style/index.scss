@@ -57,6 +57,7 @@ input::-ms-clear {
 
 button {
     all: unset;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -221,15 +222,11 @@ main {
     transition: .5s ease;
 }
 
-.profile {}
-
 .welcome {
     height: 18px;
     font-size: 18px;
     text-align: center;
 }
-
-.block_data {}
 
 .hide {
     position: absolute;
@@ -421,6 +418,7 @@ main {
 
     .area_input {
         all: unset;
+        box-sizing: border-box;
         white-space: pre-wrap;
         word-wrap: break-word;
         padding: 5px 5px 5px 5px;
@@ -512,6 +510,7 @@ label {
 .change_pass,
 .change {
     all: unset;
+    box-sizing: border-box;
     cursor: pointer;
     width: 500px;
     padding: 5px;
