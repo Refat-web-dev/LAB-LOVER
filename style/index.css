@@ -773,8 +773,9 @@ footer .logo {
 }
 
 .analysis-list label {
-  display: block;
-  margin-bottom: 0;
+  display: flex; /* Позволяет выстроить элементы в строку */
+  align-items: center; /* Выравнивание текста и чекбокса по вертикали */
+  margin-bottom: 8px; /* Отступ между строками */
   font-size: 14px;
   color: #555;
   cursor: pointer;
