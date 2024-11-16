@@ -26,6 +26,11 @@ a:active {
   outline: none;
 }
 
+.loadPadding::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
 nav,
 footer,
 header,
@@ -756,6 +761,30 @@ footer .logo {
 
 .analysis-list input[type=checkbox] {
   margin-right: 10px;
+}
+
+.loadPadding {
+  overflow-y: scroll;
+}
+
+.loadPadding::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.loadPadding::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.loadPadding::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.roloadPadding::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 /* #cont-upload{
