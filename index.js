@@ -1,5 +1,6 @@
 let conts = document.querySelectorAll("main .page");
 let tabs = document.querySelectorAll(".navigation");
+let title = document.querySelector("title")
 let zIndexCont = document.querySelector('.z-index')
 let zindexBtn = document.querySelector('#review')
 
@@ -13,6 +14,8 @@ tabs.forEach((btn) => {
     let key = btn.id;
 
     btn.onclick = () => {
+        title.innerHTML = `${key}`
+
         if (window.innerWidth / 2 <= 1120) {
             aside.style.left = "-100%"
             canvas.style.opacity = "0";
@@ -35,12 +38,16 @@ tabs.forEach((btn) => {
 
         if (key === "change" || key === "forgot" || key === "private") {
             let profileButton = document.querySelector('#profile');
+            title.innerHTML = `profile`
+
             if (profileButton) {
                 profileButton.classList.add('layouts_buttons_active');
             }
         }
         if (key === "upload" || key === "review" || key === "loading") {
             let profileButton = document.querySelector('#analyze');
+            title.innerHTML = `analyze`
+
             zIndexCont.style.display = "block"
 
             if (profileButton) {
