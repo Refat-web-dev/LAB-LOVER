@@ -1,22 +1,25 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
 }
-.tableBox{
+
+.tableBox {
     overflow: hidden;
     position: relative;
-} 
+}
+
 .swiper {
     width: 100%;
     height: 100%;
 }
 
 .swiper-slide {
-    max-width: 100%; /* Ограничение ширины */
-    max-height: 100%; /* Ограничение высоты */
+    max-width: 100%;
+    /* Ограничение ширины */
+    max-height: 100%;
+    /* Ограничение высоты */
     margin: auto;
 }
 
@@ -72,11 +75,12 @@
     border-right: none;
 }
 
-.flexTd{
+.flexTd {
     text-align: center;
-    
+
 }
-.flexTd img{
+
+.flexTd img {
     width: 20px;
     object-fit: cover;
 
@@ -129,24 +133,27 @@
     color: #fff;
     background: #007aff;
 }
-.btns{
+
+.btns {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:10px ;
+    gap: 10px;
     cursor: pointer;
     margin-top: 30px;
     z-index: 999;
 }
-.rightBtn, .rightBtntwo{
+
+.rightBtn,
+.rightBtntwo {
     rotate: 180deg;
 }
 
-.btnsTwo{
+.btnsTwo {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:10px ;
+    gap: 10px;
     cursor: pointer;
     margin-top: 30px;
     z-index: 999;
@@ -165,10 +172,12 @@
     border-collapse: collapse;
 }
 
-.order-table__header, .order-table__cell {
+.order-table__header,
+.order-table__cell {
     padding: 8px 12px;
     text-align: left;
-    border: 1px solid #d0d0d0; /* Границы вокруг ячеек */
+    border: 1px solid #d0d0d0;
+    /* Границы вокруг ячеек */
 }
 
 .order-table__header {
@@ -196,30 +205,52 @@
     text-decoration: underline;
 }
 
-  @media(max-width:730px){
-    thead, tbody{
+@media(max-width:730px) {
+
+    thead,
+    tbody {
         font-size: 13px;
     }
 
-    .flexTd img{
+    .flexTd img {
         width: 14px;
         object-fit: cover;
-    
-    }  
-    
+
+    }
+
 }
-@media(max-width:450px){
-    thead, tbody{
+
+@media(max-width:450px) {
+
+    thead,
+    tbody {
+        font-size: 9px;
+    }
+
+    .analysis-table thead th {
+        padding: 10px 3px;
+    }
+
+    .order-table__header,
+    .order-table__cell {
+        padding: 8px 5px !important;
+        text-align: center;
+        font-size: 9px !important;
+    }
+
+    .analysis-table tbody td {
+        padding: 3px 3px;
+        text-align: center;
+    }
+
+    .flexTd img {
+        width: 14px;
+        object-fit: cover;
+
+    }
+
+    .order-table__header {
         font-size: 10px;
     }
 
-    .flexTd img{
-        width: 14px;
-        object-fit: cover;
-    
-    }  
-    .order-table__header{
-        font-size: 10px;
-    }
-    
 }

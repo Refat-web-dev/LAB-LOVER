@@ -39,7 +39,7 @@ tabs.forEach((btn) => {
                 profileButton.classList.add('layouts_buttons_active');
             }
         }
-        if (key === "upload" || key === "review") {
+        if (key === "upload" || key === "review" || key === "loading" ) {
             let profileButton = document.querySelector('#analyze');
             zIndexCont.style.display = "block"
 

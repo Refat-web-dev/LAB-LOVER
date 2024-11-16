@@ -93,6 +93,12 @@
     }
 }
 
+@media only screen and (max-width:750px) {
+    .container {
+        margin: 0 auto;
+        max-width: 95%;
+    }
+}
 
 @media only screen and (max-width: 674px) {
 
@@ -103,6 +109,24 @@
         }
     }
 
+    .blocks h1 {
+        font-size: 13px !important;
+    }
+
+    .blocksPadding {
+        padding: 30px 10px !important;
+    }
+
+    .blockFlPadding {
+        padding: 30px 10px !important;
+        white-space: nowrap !important;
+
+    }
+
+    .order-table__header,
+    .order-table__cell {
+        padding: 8px 5px !important;
+    }
 }
 
 @media only screen and (max-width: 580px) {
@@ -116,5 +140,11 @@
         h2:not(.title) {
             font-size: 14px;
         }
+    }
+.row{
+    padding: 30px 10px;
+}
+    .table-analyses {
+        font-size: 10px !important;
     }
 }

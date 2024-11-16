@@ -88,12 +88,12 @@
                     </div>
                 </div>
                 <div id="cont-price" class="profile page">
-                    <h1 class="welcome">Price</h1>
+                    <h1 class="welcome"></h1>
                     <div class="block_data">
                         <h2 class="title">My price</h2>
-                        <div class="row">
+                        <div class="row blocksPadding">
                             <div class="blocks">
-                                <h1>Выбирайте наиболее подходящий вариант для себя</h1>
+                                <h1>Выбирайте свой пакет</h1>
                                 <br>
                                 <table class="table-analyses">
                                     <thead>
@@ -105,37 +105,37 @@
                                     </thead>
                                     <tbody>
                                         <tr class="table-analyses__row">
-                                            <td class="table-analyses__cell">1 анализ</td>
+                                            <td class="table-analyses__cell">1</td>
                                             <td class="table-analyses__cell">Бесплатно</td>
                                             <td class="table-analyses__cell"><a href="#"
                                                     class="table-analyses__action-link">Загрузить</a></td>
                                         </tr>
                                         <tr class="table-analyses__row">
-                                            <td class="table-analyses__cell">3 анализа</td>
+                                            <td class="table-analyses__cell">3 </td>
                                             <td class="table-analyses__cell">999 тг</td>
                                             <td class="table-analyses__cell"><a href="#"
                                                     class="table-analyses__action-link">Купить</a></td>
                                         </tr>
                                         <tr class="table-analyses__row">
-                                            <td class="table-analyses__cell">5 анализов</td>
+                                            <td class="table-analyses__cell">5 </td>
                                             <td class="table-analyses__cell">1399 тг</td>
                                             <td class="table-analyses__cell"><a href="#"
                                                     class="table-analyses__action-link">Купить</a></td>
                                         </tr>
                                         <tr class="table-analyses__row">
-                                            <td class="table-analyses__cell">10 анализов</td>
+                                            <td class="table-analyses__cell">10 </td>
                                             <td class="table-analyses__cell">1899 тг</td>
                                             <td class="table-analyses__cell"><a href="#"
                                                     class="table-analyses__action-link">Купить</a></td>
                                         </tr>
                                         <tr class="table-analyses__row">
-                                            <td class="table-analyses__cell">15 анализов</td>
+                                            <td class="table-analyses__cell">15 </td>
                                             <td class="table-analyses__cell">2399 тг</td>
                                             <td class="table-analyses__cell"><a href="#"
                                                     class="table-analyses__action-link">Купить</a></td>
                                         </tr>
                                         <tr class="table-analyses__row">
-                                            <td class="table-analyses__cell">25 анализов</td>
+                                            <td class="table-analyses__cell">25 </td>
                                             <td class="table-analyses__cell">2999 тг</td>
                                             <td class="table-analyses__cell"><a href="#"
                                                     class="table-analyses__action-link">Купить</a></td>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div id="cont-analyze" class="profile page">
-                    <h1 class="welcome">Analyze</h1>
+                    <h1 class="welcome"></h1>
                     <div class="block_data">
                         <h2 class="title">Мои анализы</h2>
                         <div class="border_frame">
@@ -163,7 +163,7 @@
 
                             <br><br>
                             <div class="searchBox">
-                                <input type="search" name="" id="searchAnalyze" placeholder="Поиск анализа">
+                                <input type="search" name="" id="searchAnalyze" placeholder="Поиск ">
                                 <p>
                                     Фильтровать
                                     <img src="./img/Vector.png" alt="">
@@ -196,7 +196,7 @@
                     <h1 class="welcome"></h1>
                     <div class="block_data">
                         <h2 class="title">Мои анализы</h2>
-                        <div class="row">
+                        <div class="row ">
                             <div class="uploadBlock">
                                 <p>Количество доступных анализов: 1 </p><br><br>
                                 <p>Ваш первый анализ - бесплатно! Загрузите файл и попробуйте наш сервис без риска!</p>
@@ -204,7 +204,7 @@
                                 <p>Перетащите файл сюда или нажмите для выбора</p>
                                 <br>
 
-                                <div id="uploadForm" class="upload-area">
+                                <div id="loading" class="upload-area navigation">
                                     <img src="./img/Vector (2).png" alt="Upload Icon" width="40">
                                     <label>Поддерживаемые форматы: PDF</label>
                                     <input type="file" id="fileInput" accept="application/pdf">
@@ -217,6 +217,60 @@
                         </div>
                     </div>
                 </div>
+
+
+
+                <div id="cont-loading" class="profile page">
+                    <h1 class="welcome"></h1>
+                    <div class="block_data">
+                        <h2 class="title"></h2>
+                        <div class="row">
+                            <div class="leadingBlock">
+                                <div class="patient-info">
+                                    <p><strong>Имя:</strong> КАРАВАЙЦЕВ ЕГОР ВЛАДИМИРОВИЧ</p>
+                                    <p><strong>Дата сдачи анализов:</strong> 04.11.2022</p>
+                                </div><br>
+                                <div class="analysis-list">
+                                    <p><strong>Перечень анализов:</strong></p><br>
+                                    <form>
+                                        <label>
+                                            <input type="checkbox" name="analysis" value="biochemistry">
+                                            Биохимический анализ крови
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="analysis" value="rheum-tests">
+                                            Ревмопробы, расширенный (РФ, СРБ, АСЛ-О, Анти-ЦЦП)
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="analysis" value="cbc">
+                                            Общий анализ крови (ОАК)
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="analysis" value="testosterone">
+                                            Иммунохемилюминисцентный анализ (ИХЛ) - Тестостерон
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="analysis" value="psa">
+                                            Иммунохемилюминисцентный анализ (ИХЛ) - ПСА общий
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="analysis" value="thyroid">
+                                            Щитовидная железа. Профилактика (ТТГ, а-ТПО, FT4)
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="analysis" value="vitamin-d">
+                                            Витамин Д (25-гидроксивитамин D)
+                                        </label>
+                                    </form>
+                                </div>
+                                <p><strong>Количество анализов в отчёте:</strong> 7</p><br>
+                                <p>Пожалуйста, выберите, какие анализы вы хотели бы расшифровать. Отметьте нужные
+                                    чекбоксы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
 
 
@@ -235,10 +289,9 @@
                                     <p>Дата сдачи анализов: 04.11.2022</p><br>
                                     <p>Количество анализов в отчёте: <b>1</b></p><br>
                                     <p>Перечень анализов: </p><br>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Биохимический анализ крови
-                                    </label>
+                                    <ul>
+                                        <li>1. Биохимический анализ крови</li>
+                                    </ul>
                                 </div>
 
                                 <br><br>
@@ -246,10 +299,10 @@
                                 <div class="scCase">
                                     <h3><b> Интерпретация результатов</b></h3>
                                     <br>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Глюкоза
-                                    </label><br>
+                                    <ul>
+                                        <li><b>1. Глюкоза</b></li>
+                                    </ul>
+                                    <br>
                                     <p>Результат пациента: <b>4.75 mmol/I</b></p><br>
                                     <p>Референтные значения (норма): <b>3.89 - 5.83 mmol/I</b></p><br>
                                     <p>Отклонение от нормы: <b> Нет. </b></p>
@@ -257,10 +310,9 @@
                                 <br><br>
 
                                 <div class="thCase">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Кальций общий (Са)
-                                    </label><br>
+                                    <ul>
+                                        <li><b>2. Кальций общий (Са)</b></li>
+                                    </ul><br>
                                     <p>Результат пациента: <b>2.56 mmol/I</b></p><br>
                                     <p>Референтные значения (норма): <b> 2.10 - 2.55 mmol/I</b></p><br>
                                     <p>Отклонение от нормы: <u>Да.</u> Незначительное повышение на <b> 0.01 mmol/I </b>
@@ -275,10 +327,10 @@
                                 </div>
                                 <br><br>
                                 <div class="ftCase">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Креатинин в сыворотке
-                                    </label><br>
+                                    <ul>
+                                        <li><b>3. Креатинин в сыворотке
+                                            </b></li>
+                                    </ul><br>
 
                                     <p>Результат пациента: <b>109.79 umol/I</b></p><br>
                                     <p>Референтные значения (норма): <b>63.6 - 110.5 umol/I </b></p><br>
@@ -287,29 +339,31 @@
                                 <br><br>
 
                                 <div class="fvCase">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Магний (Mg)
-                                    </label><br>
+                                    <ul>
+                                        <li><b>4. Магний (Mg)</b>
+                                        </li>
+                                    </ul>
+                                    <br>
                                     <p>Результат пациента: <b>0.87 mmol/I</b></p><br>
                                     <p>Референтные значения (норма): <b>0.65 - 1.05 mmol/I </b></p><br>
                                     <p>Отклонение от нормы: <b>Нет.</b></p>
                                 </div>
                                 <br><br>
                                 <div class="sxCase">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Мочевая кислота в сыворотке </label><br>
+                                    <ul>
+                                        <li><b>5. Мочевая кислота в сыворотке</b></li>
+                                    </ul>
+                                    <br>
                                     <p>Результат пациента: <b>321.84 umol/I</b></p><br>
                                     <p>Референтные значения (норма): <b>210 - 420 umol/I </b></p><br>
                                     <p>Отклонение от нормы: <b>Нет. </b></p>
                                 </div>
-
+                                <br><br>
                                 <div class="sveCase">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Мочевина в сыворотке
-                                    </label><br>
+                                    <ul>
+                                        <b> <b>6. Мочевина в сыворотке
+                                            </b></b>
+                                    </ul><br>
                                     <p>Результат пациента: <b>3.98 mmol/I</b></p><br>
                                     <p>Референтные значения (норма): <b>3.0 - 8.2 mmol/I </b></p><br>
                                     <p>Отклонение от нормы: <b>Нет.</b></p>
@@ -382,10 +436,10 @@
                 </div>
 
                 <div id="cont-history" class="profile page">
-                    <h1 class="welcome">History</h1>
+                    <h1 class="welcome"></h1>
                     <div class="block_data">
                         <h2 class="title">Мой профиль</h2>
-                        <div class="row">
+                        <div class="row blockFlPadding">
                             <div class="blockFl">
 
                                 <p>Количество доступных анализов: <b>3 из 5</b></p>
@@ -394,7 +448,7 @@
 
                                 <br><br>
                                 <div class="searchBox">
-                                    <input type="search" name="" id="searchAnalyze" placeholder="Поиск анализа">
+                                    <input type="search" name="" id="searchAnalyze" placeholder="Поиск ">
                                     <p>
                                         Фильтровать
                                         <img src="./img/Vector.png" alt="">

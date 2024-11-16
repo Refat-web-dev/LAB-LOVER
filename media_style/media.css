@@ -21,8 +21,8 @@
     flex-direction: column;
   }
   #cont-profile .row .user_input,
-  #cont-profile .row .change,
-  #cont-profile .row .change_pass {
+#cont-profile .row .change,
+#cont-profile .row .change_pass {
     width: 100%;
   }
   #cont-profile .row .right {
@@ -32,14 +32,14 @@
     flex-direction: column;
   }
   #cont-change .user_input,
-  #cont-change .change,
-  #cont-change .change_pass {
+#cont-change .change,
+#cont-change .change_pass {
     width: 100%;
   }
   #cont-forgot form,
-  #cont-forgot .user_input,
-  #cont-forgot button,
-  #cont-forgot .sign_in {
+#cont-forgot .user_input,
+#cont-forgot button,
+#cont-forgot .sign_in {
     width: 100%;
   }
   #cont-forgot .spam_message {
@@ -47,8 +47,8 @@
     width: 300px;
   }
   #cont-private form,
-  #cont-private .registration,
-  #cont-private .user_input {
+#cont-private .registration,
+#cont-private .user_input {
     width: 100%;
   }
   #cont-private form button {
@@ -58,10 +58,30 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 750px) {
+  .container {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+}
 @media only screen and (max-width: 674px) {
   #cont-forgot h2:not(.title),
-  #cont-private h2:not(.title) {
+#cont-private h2:not(.title) {
     font-size: 12px;
+  }
+  .blocks h1 {
+    font-size: 13px !important;
+  }
+  .blocksPadding {
+    padding: 30px 10px !important;
+  }
+  .blockFlPadding {
+    padding: 30px 10px !important;
+    white-space: nowrap !important;
+  }
+  .order-table__header,
+.order-table__cell {
+    padding: 8px 5px !important;
   }
 }
 @media only screen and (max-width: 580px) {
@@ -71,4 +91,11 @@
   #cont-support h2:not(.title) {
     font-size: 14px;
   }
-}/*# sourceMappingURL=media.css.map */
+  .row {
+    padding: 30px 10px;
+  }
+  .table-analyses {
+    font-size: 10px !important;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -143,7 +143,7 @@ header {
 
 .container {
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -731,6 +731,31 @@ footer .logo {
 .blockFl,
 .blockBhb {
   width: 100%;
+}
+
+.patient-info {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.patient-info p {
+  margin: 5px 0;
+}
+
+.analysis-list {
+  margin-bottom: 10px;
+}
+
+.analysis-list label {
+  display: block;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.analysis-list input[type=checkbox] {
+  margin-right: 10px;
 }
 
 /* #cont-upload{
