@@ -57,6 +57,7 @@ input::-ms-clear {
 
 button {
   all: unset;
+  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -368,6 +369,7 @@ main {
 }
 #cont-support .area_input {
   all: unset;
+  box-sizing: border-box;
   white-space: pre-wrap;
   word-wrap: break-word;
   padding: 5px 5px 5px 5px;
@@ -441,6 +443,7 @@ label p {
 .change_pass,
 .change {
   all: unset;
+  box-sizing: border-box;
   cursor: pointer;
   width: 500px;
   padding: 5px;
