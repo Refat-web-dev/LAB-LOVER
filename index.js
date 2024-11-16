@@ -122,10 +122,10 @@ canvas.onclick = () => {
     }, 500);
 }
 
-let labels = document.querySelectorAll(".change_pass_form label");
+let labels = document.querySelectorAll(".change_pass_form label, .private_cabinet .password_recovery");
 
 labels.forEach(label => {
-    const viewIcon = label.querySelector(".view");
+    const viewIcon = label.querySelector(".view_pass");
     const passwordInput = label.querySelector("input");
 
     let closed = true;

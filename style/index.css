@@ -448,7 +448,7 @@ label p {
   margin-bottom: 5px;
 }
 
-.view {
+.view_pass {
   cursor: pointer;
   position: absolute;
   top: 49.5%;
