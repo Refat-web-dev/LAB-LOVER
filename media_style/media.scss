@@ -98,6 +98,13 @@
         margin: 0 auto;
         max-width: 95%;
     }
+    .patient-info {
+        font-size: 13px;
+      }
+    
+      .analysis-list label {
+        font-size: 13px;
+      }
 }
 
 @media only screen and (max-width: 674px) {
@@ -147,4 +154,15 @@
     .table-analyses {
         font-size: 10px !important;
     }
+    .patient-info {
+        font-size: 12px;
+      }
+    
+      .analysis-list label {
+        font-size: 12px;
+      }
+    
+      .analysis-list input[type="checkbox"] {
+        margin-right: 5px;
+      }
 }
