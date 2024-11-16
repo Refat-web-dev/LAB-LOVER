@@ -134,11 +134,11 @@ labels.forEach(label => {
         if (closed) {
             closed = false;
             passwordInput.type = "text";
-            viewIcon.style.backgroundImage = 'url("../img/view.png")';
+            viewIcon.style.backgroundImage = 'url("./img/view.png")';
         } else {
             closed = true;
             passwordInput.type = "password";
-            viewIcon.style.backgroundImage = 'url("../img/hide.png")';
+            viewIcon.style.backgroundImage = 'url("./img/hide.png")';
         }
     };
 });
